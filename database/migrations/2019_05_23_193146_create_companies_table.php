@@ -17,7 +17,8 @@ class CreateCompaniesTable extends Migration
             $table->bigIncrements('id');
             $table->string('registration_no')->nullable(false);
             $table->string('name')->nullable(false);
-            $table->string('hq_address');  //can be broken into further columns later
+//            $table->string('hq_address_lane');  //can be broken into further columns later
+//            $table->string('hq_address_city');
             $table->mediumText('about');
             $table->string('website');
             $table->year('foundation_year');
