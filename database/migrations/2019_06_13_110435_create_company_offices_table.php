@@ -15,7 +15,7 @@ class CreateCompanyOfficesTable extends Migration
     {
         Schema::create('company_offices', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('company_id');
+            $table->unsignedBigInteger('company_id');
             $table->string('code');
             $table->string('header'); //heading text
             $table->boolean('head_office'); //true only when adding head office details

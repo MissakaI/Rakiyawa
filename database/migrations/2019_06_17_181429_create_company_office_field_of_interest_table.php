@@ -15,8 +15,8 @@ class CreateCompanyOfficeFieldOfInterestTable extends Migration
     {
         Schema::create('company_office_fields_of_interest', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('office_id');
-            $table->bigInteger('field_id');
+            $table->unsignedBigInteger('office_id');
+            $table->unsignedBigInteger('field_id');
             $table->timestamps();
 
             $table->foreign('office_id')
