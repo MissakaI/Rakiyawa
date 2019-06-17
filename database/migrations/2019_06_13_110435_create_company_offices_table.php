@@ -15,12 +15,13 @@ class CreateCompanyOfficesTable extends Migration
     {
         Schema::create('company_offices', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('office_code');
-            $table->string('office_header'); //heading text
+            $table->bigInteger('company_id');
+            $table->string('code');
+            $table->string('header'); //heading text
             $table->boolean('head_office'); //true only when adding head office details
-            $table->string('office_address_lane');
-            $table->string('office_address_city');
-            $table->json('office_contact_persons'); //contact persons info is saved in a json
+            $table->string('address_lane');
+            $table->string('address_city');
+            $table->json('contact_persons'); //contact persons info is saved in a json
             /* json format
              {
               "name":"",
@@ -31,9 +32,13 @@ class CreateCompanyOfficesTable extends Migration
              */
 
 //            $table->json('office_contact_no');
-            $table->string('office_about');
-            $table->binary('office_logo');
+            $table->string('about');
+            $table->binary('logo');
             $table->timestamps();
+
+            $table->foreign('company_id')
+                ->references('id')->on('companies')
+                ->onDelete('cascade');
         });
     }
 
