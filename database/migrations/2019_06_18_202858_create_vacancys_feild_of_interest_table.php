@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CompanyFieldOfInterestTable extends Migration
+class CreateVacancysFeildOfInterestTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CompanyFieldOfInterestTable extends Migration
      */
     public function up()
     {
-        Schema::create('company_field_of_interest', function (Blueprint $table) {
+        Schema::create('vacancy_field_of_interest', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('company_id');
+            $table->unsignedBigInteger('vacancy_id');
             $table->unsignedBigInteger('field_id');
             $table->timestamps();
 
-            $table->foreign('company_id')
-                ->references('id')->on('companies')
+            $table->foreign('vacancy_id')
+                ->references('id')->on('vacancies')
                 ->onDelete('cascade');
 
             $table->foreign('field_id')
@@ -36,6 +36,6 @@ class CompanyFieldOfInterestTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('company_field_of_interest');
+        Schema::dropIfExists('vacancys_feild_of_interest');
     }
 }

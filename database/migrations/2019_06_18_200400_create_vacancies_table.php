@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFeildsOfInterestTable extends Migration
+class CreateVacanciesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,16 @@ class CreateFeildsOfInterestTable extends Migration
      */
     public function up()
     {
-        Schema::create('fields_of_interest', function (Blueprint $table) {
+        Schema::create('vacancies', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('field_name')->nullable(false);
-            $table->text('field_description');
-            $table->unsignedBigInteger('verified_by');
+            $table->text('job_title');
+            $table->text('job_position');
+            $table->dateTime('deadline');
+            $table->longText('description');
+            $table->binary('brochure');
+            $table->json('contact_info');
+            $table->json('location');
             $table->timestamps();
-
-            $table->foreign('verified_by')
-                ->references('id')->on('users');
         });
     }
 
@@ -32,6 +33,6 @@ class CreateFeildsOfInterestTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('feilds_of_interest');
+        Schema::dropIfExists('vacancies');
     }
 }
