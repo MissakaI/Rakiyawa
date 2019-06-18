@@ -21,7 +21,7 @@ class CreateFeildsOfInterestTable extends Migration
             $table->timestamps();
 
             $table->foreign('verified_by')
-                ->references('users')->on('id');
+                ->references('id')->on('users');
         });
     }
 

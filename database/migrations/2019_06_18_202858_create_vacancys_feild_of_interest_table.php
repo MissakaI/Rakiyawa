@@ -24,7 +24,7 @@ class CreateVacancysFeildOfInterestTable extends Migration
                 ->onDelete('cascade');
 
             $table->foreign('field_id')
-                ->references('id')->on('field_of_interest')
+                ->references('id')->on('fields_of_interest')
                 ->onDelete('cascade');
         });
     }
