@@ -16,10 +16,10 @@ class CreateCompanyAdminsTable extends Migration
         Schema::create('company_admins', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('employee_code');
-            $table->string('first_name');
+            $table->string('first_name')->nullable(false);
             $table->string('last_name');
             $table->string('username')->unique();
-            $table->binary('password');
+            $table->binary('password')->nullable(false);
             $table->json('access_privileges');
             $table->timestamps();
         });
