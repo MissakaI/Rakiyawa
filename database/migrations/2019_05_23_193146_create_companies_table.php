@@ -23,7 +23,7 @@ class CreateCompaniesTable extends Migration
             $table->string('website');
             $table->year('foundation_year');
             $table->unsignedSmallInteger('employee_count');
-            $table->binary('logo');
+            $table->string('logo');
             $table->timestamps();
         });
     }
