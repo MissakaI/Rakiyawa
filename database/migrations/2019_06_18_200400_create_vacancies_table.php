@@ -15,14 +15,19 @@ class CreateVacanciesTable extends Migration
     {
         Schema::create('vacancies', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('company_id');
             $table->text('job_title');
             $table->text('job_position');
             $table->dateTime('deadline');
             $table->longText('description');
-            $table->binary('brochure');
+            $table->string('brochure');
             $table->json('contact_info');
             $table->json('location');
             $table->timestamps();
+
+            $table->foreign('company_id')
+                ->references('id')->on('companies')
+                ->onDelete('cascade');
         });
     }
 

@@ -32,8 +32,8 @@ class CreateCompanyOfficesTable extends Migration
              */
 
 //            $table->json('office_contact_no');
-            $table->string('about');
-            $table->binary('logo');
+            $table->longText('about');
+            $table->text('logo');
             $table->timestamps();
 
             $table->foreign('company_id')

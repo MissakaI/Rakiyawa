@@ -15,12 +15,13 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('initials_name');
             $table->string('first_name')->nullable(false);
-            $table->string('middle_name');
             $table->string('last_name')->nullable(false);
+            $table->string('email')->nullable(false);
             $table->string('address_lane');
             $table->string('address_city');
+            $table->string('username')->unique();
+            $table->binary('password')->nullable(false);
             $table->mediumText('biography');
             $table->string('website');
 
@@ -45,7 +46,7 @@ class CreateMembersTable extends Migration
              }]
              */
 
-            $table->binary('profile_picture');
+            $table->string('profile_picture');
             $table->timestamps();
         });
     }
