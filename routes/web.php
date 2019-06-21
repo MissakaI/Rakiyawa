@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get('/user',function (){
     return view('user-profile');
 });
+
+Route::get('/company',function (){
+    return view('company-profile');
+});
+
+Route::get('/useredit',function (){
+    return view('user-edit');
+});
