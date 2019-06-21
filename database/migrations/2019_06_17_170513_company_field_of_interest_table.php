@@ -15,8 +15,8 @@ class CompanyFieldOfInterestTable extends Migration
     {
         Schema::create('company_field_of_interest', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('company_id');
-            $table->bigInteger('field_id');
+            $table->unsignedBigInteger('company_id');
+            $table->unsignedBigInteger('field_id');
             $table->timestamps();
 
             $table->foreign('company_id')

@@ -15,10 +15,13 @@ class CreateFeildsOfInterestTable extends Migration
     {
         Schema::create('fields_of_interest', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('field_name');
+            $table->string('field_name')->nullable(false);
             $table->text('field_description');
-            $table->boolean('verified');
+            $table->unsignedBigInteger('verified_by');
             $table->timestamps();
+
+            $table->foreign('verified_by')
+                ->references('id')->on('users');
         });
     }
 
