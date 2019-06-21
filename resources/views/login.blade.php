@@ -228,8 +228,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="copyright text-right">
-                    &copy; 2019
-                    Rakiyawa Inc.
+                    &copy; 2019 Jobba Inc.
                 </div>
             </div>
         </div>
