@@ -20,7 +20,7 @@
     <link type="text/css" href="css/docs.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="@yield('body-class')">
 <header class="header-global">
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
         <div class="container">
