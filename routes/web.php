@@ -26,3 +26,7 @@ Route::get('/company',function (){
 Route::get('/useredit',function (){
     return view('user-edit');
 });
+
+Route::get('/vacancy',function (){
+    return view('user-vacancy');
+});
