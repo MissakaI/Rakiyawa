@@ -26,3 +26,6 @@ Route::get('/company',function (){
 Route::get('/useredit',function (){
     return view('user-edit');
 });
+
+Route::post('/save','Register@store');
+
