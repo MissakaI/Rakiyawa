@@ -31,6 +31,8 @@ Route::get('/useredit',function (){
     return view('user-edit');
 });
 
+Route::resource('vacancies','VacancyController');
+
 Route::get('/vacancyedit',function (){
     return view('vacancy-edit');
 });
