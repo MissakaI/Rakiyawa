@@ -1,4 +1,6 @@
 <?php
+// use Symfony\Component\Routing\Route;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,14 @@
 Route::get('/', function () {
     return view('login');
 });
+Route::get('/companysignup', function () {
+    return view( 'company-signup');
+});
+Route::get('/companylogin', function () {
+    return view('company-login');
+});
+// Route::get('/', 'CompanyController@addCompany');
+Route::post('/company', 'CompanyController@signup');
 
 Route::get('/company-login', function () {
     return view('company-login');
@@ -23,9 +33,9 @@ Route::get('/user',function (){
     return view('user-profile');
 });
 
-Route::get('/company',function (){
-    return view('company-profile');
-});
+// Route::get('/company',function (){
+//     return view('company-profile');
+// });
 
 Route::get('/useredit',function (){
     return view('user-edit');
