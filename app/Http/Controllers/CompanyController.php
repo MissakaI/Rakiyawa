@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 use App\Company;
 use App\CompanyAdmin;
 
@@ -50,9 +52,6 @@ class CompanyController extends Controller
         $company->save();
 
 
-
-
-
         $companyAdmin = new CompanyAdmin([
             'company_id' => $company->id,
             'first_name' => $request->get('first-name'),
@@ -63,6 +62,14 @@ class CompanyController extends Controller
         ]);
 
         $companyAdmin->save();
+    }
+    public function showCompanyDetails(){
+
+        $companyData = DB::table( 'companies')->where('id', '2')->first();
+
+        return view( 'company-profile')->with( 'companyData', $companyData);
+        // echo $companyData->employee_count;
+
     }
 
 
