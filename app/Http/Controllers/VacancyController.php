@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Company;
+use App\Post;
 
-class CompanyController extends Controller
+class VacancyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        //
+        //return Post::all();
+        return view('user-vacancy');
     }
 
     /**
@@ -24,7 +25,7 @@ class CompanyController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -33,25 +34,10 @@ class CompanyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function signup(Request $request)
+    public function store(Request $request)
     {
         //
-        $company = new Company([
-            'name' => $request->get('company-name'),
-            'website' => $request->get( 'web-site'),
-            // 'address'=> $request->get( 'address'),
-            'foundation_year' => $request->get('year'),
-            'employee_count' => $request->get('count'),
-            // 'email'=> $request->get('company-email'),
-            'about' => $request->get('company-name'),
-
-        ]);
-        $company->save();
-
-
     }
-
-
 
     /**
      * Display the specified resource.
