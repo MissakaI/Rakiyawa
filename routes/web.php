@@ -42,3 +42,5 @@ Route::get('/vacancy',function (){
 });
 
 Route::post('/save','Register@store');
+
+Route::get('/member/{id}','MemberController@get');
