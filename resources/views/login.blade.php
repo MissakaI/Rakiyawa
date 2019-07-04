@@ -32,26 +32,10 @@
                     <div class="col-lg-5">
                         <div class="card bg-secondary shadow border-0">
                             <div class="card-header bg-white p-3 text-center">
-                                <img src="img/brand/blue.png" style="width: 20rem" class="align-items-center">
-                                <!--
-                                <div class="text-muted text-center mb-3">
-                                    <small>Sign in with</small>
+                                <img src="img/brand/blue.png" style="width: 10rem" class="mb-2">
+                                <div class="text-primary">
+                                    Let's build your career with us
                                 </div>
-                                <div class="btn-wrapper text-center">
-                                    <a href="#" class="btn btn-neutral btn-icon">
-                    <span class="btn-inner--icon">
-                      <img src="img/icons/common/github.svg">
-                    </span>
-                                        <span class="btn-inner--text">Github</span>
-                                    </a>
-                                    <a href="#" class="btn btn-neutral btn-icon">
-                    <span class="btn-inner--icon">
-                      <img src="img/icons/common/google.svg">
-                    </span>
-                                        <span class="btn-inner--text">Google</span>
-                                    </a>
-                                </div>
-                               -->
                             </div>
                             <div class="card-body px-lg-5 py-lg-5">
                                 <div class="text-center text-muted mb-4">
@@ -143,7 +127,8 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Email" type="email" name="email">
+                                                <input class="form-control" placeholder="Email" type="email"
+                                                       name="email">
                                             </div>
                                         </div>
 
@@ -191,7 +176,8 @@
                                         <div class="form-group mb-3">
                                             <div class="input-group input-group-alternative">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                                    <span class="input-group-text"><i
+                                                            class="ni ni-lock-circle-open"></i></span>
                                                 </div>
                                                 <input class="form-control" placeholder="Password" type="password" name="password">
                                             </div>
@@ -200,9 +186,11 @@
                                         <div class="form-group mb-3">
                                             <div class="input-group input-group-alternative">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                                    <span class="input-group-text"><i
+                                                            class="ni ni-lock-circle-open"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Re-enter Password" type="password">
+                                                <input class="form-control" placeholder="Re-enter Password"
+                                                       type="password">
                                             </div>
                                         </div>
 
@@ -250,9 +238,9 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-6">
-<!--                                <a href="#" class="text-dark">-->
-<!--                                    <small>Forgot password?</small>-->
-<!--                                </a>-->
+                                <!--                                <a href="#" class="text-dark">-->
+                                <!--                                    <small>Forgot password?</small>-->
+                                <!--                                </a>-->
                             </div>
                             <div class="col-6 text-right">
                                 <a href="#" class="text-dark">

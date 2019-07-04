@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('login');
 });
 
+Route::get('/company-login', function () {
+    return view('company-login');
+});
+
 Route::get('/user',function (){
     return view('user-profile');
 });
@@ -25,6 +29,10 @@ Route::get('/company',function (){
 
 Route::get('/useredit',function (){
     return view('user-edit');
+});
+
+Route::get('/vacancyedit',function (){
+    return view('vacancy-edit');
 });
 
 Route::get('/vacancy',function (){
