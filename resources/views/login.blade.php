@@ -114,8 +114,8 @@
                                 <!--<div class="text-center text-muted mb-4">
                                     <small>Sign in with credentials</small>
                                 </div>-->
-                                <form role="form">
-
+                                <form role="form" method="post" action="/save">
+                                {{csrf_field()}}
                                     <!--registration page 1 -->
                                     <div id="reg-pg-1">
                                         <div class="form-group mb-3">
@@ -124,7 +124,7 @@
                                                     <span class="input-group-text"><i
                                                             class="ni ni-circle-08"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="First Name" type="text" name="first-name">
+                                                <input class="form-control" placeholder="First Name" type="text" name="firstname">
                                             </div>
                                         </div>
 
@@ -134,7 +134,7 @@
                                                     <span class="input-group-text"><i
                                                             class="ni ni-circle-08"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Last Name" type="text" name="last-name">
+                                                <input class="form-control" placeholder="Last Name" type="text" name="lastname">
                                             </div>
                                         </div>
 
@@ -146,15 +146,34 @@
                                                 <input class="form-control" placeholder="Email" type="email" name="email">
                                             </div>
                                         </div>
+
+                                        <div class="form-group mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i
+                                                class="ni ni-circle-08"></i></span>
+                                    </div>
+                                    <input class="form-control" placeholder="Address Lane" type="text" name="Address_Lane">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i
+                                                class="ni ni-circle-08"></i></span>
+                                    </div>
+                                    <input class="form-control" placeholder="Address City" type="text" name="Address_City">
+                                </div>
+                            </div>
+
                                         <!--<div class="custom-control custom-control-alternative custom-checkbox">
                                             <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
                                             <label class="custom-control-label" for=" customCheckLogin">
                                                 <span>Remember me</span>
                                             </label>
                                         </div>-->
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary my-4">Next</button>
-                                        </div>
+                                       
                                     </div>
 
                                     <!--registration page 2 -->
@@ -165,7 +184,7 @@
                                                     <span class="input-group-text"><i
                                                             class="ni ni-circle-08"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Username" type="text">
+                                                <input class="form-control" placeholder="Username" type="text" name="username">
                                             </div>
                                         </div>
 
@@ -174,7 +193,7 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Password" type="password">
+                                                <input class="form-control" placeholder="Password" type="password" name="password">
                                             </div>
                                         </div>
 
@@ -186,16 +205,46 @@
                                                 <input class="form-control" placeholder="Re-enter Password" type="password">
                                             </div>
                                         </div>
-                                        <div class="custom-control custom-control-alternative custom-checkbox">
-                                            <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                            <label class="custom-control-label" for=" customCheckLogin">
-                                                <span>Agree to Terms of Conditions</span>
-                                            </label>
-                                        </div>
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary my-4">Accept & Join</button>
-                                        </div>
+
+                                        <div class="form-group mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"></span>
                                     </div>
+               
+                                    <textarea class="form-control" name="Biography" id="" cols="5" rows="2" placeholder="Biography"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i
+                                                class="ni ni-circle-08"></i></span>
+                                    </div>
+                                    <input class="form-control" placeholder="Website" type="text" name="Website">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i
+                                                class="ni ni-circle-08"></i></span>
+                                    </div>
+                                    <input class="form-control" placeholder="Contact Info" type="text" name="Contact_Info">
+                                </div>
+                            </div>
+                            <div class="custom-control custom-control-alternative custom-checkbox">
+                                <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+                                <label class="custom-control-label" for=" customCheckLogin">
+                                    <span>Agree to Terms of Conditions</span>
+                                </label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary my-4">Accept & Join</button>
+                            </div>
+                        </div>
                                 </form>
                             </div>
                         </div>
