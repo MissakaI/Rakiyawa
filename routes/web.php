@@ -34,3 +34,9 @@ Route::get('/useredit',function (){
 Route::get('/vacancyedit',function (){
     return view('vacancy-edit');
 });
+
+Route::get('/vacancy',function (){
+    return view('user-vacancy');
+});
+
+Route::post('/save','Register@store');
