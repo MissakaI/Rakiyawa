@@ -27,5 +27,8 @@ Route::get('/useredit',function (){
     return view('user-edit');
 });
 
-Route::post('/save','Register@store');
+Route::get('/vacancy',function (){
+    return view('user-vacancy');
+});
 
+Route::post('/save','Register@store');
