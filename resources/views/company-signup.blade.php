@@ -83,6 +83,27 @@
                                             </div>
 
 
+
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="About" type="text" name="about">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--registration page 2 -->
+                                        <div id="reg-pg-2">
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Company Username" type="text" name="username">
+                                                </div>
+                                            </div>
                                             <div class="form-group mb-3">
                                                 <div class="input-group input-group-alternative">
                                                     <div class="input-group-prepend">
@@ -96,28 +117,25 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                                     </div>
-                                                    <input class="form-control" placeholder="About" type="email" name="about">
+                                                    <input class="form-control" placeholder="FIrst Name" type="text" name="first-name">
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <!--registration page 2 -->
-                                        <div id="reg-pg-2">
                                             <div class="form-group mb-3">
                                                 <div class="input-group input-group-alternative">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                                     </div>
-                                                    <input class="form-control" placeholder="Company Username" type="text">
+                                                    <input class="form-control" placeholder="Last Name" type="text" name="last-name">
                                                 </div>
                                             </div>
+
 
                                             <div class="form-group mb-3">
                                                 <div class="input-group input-group-alternative">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                                     </div>
-                                                    <input class="form-control" placeholder="Password" type="password">
+                                                    <input class="form-control" placeholder="Password" type="password" name="password">
                                                 </div>
                                             </div>
 

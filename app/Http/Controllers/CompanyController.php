@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Company;
+use App\CompanyAdmin;
 
 class CompanyController extends Controller
 {
@@ -38,17 +39,30 @@ class CompanyController extends Controller
         //
         $company = new Company([
             'name' => $request->get('company-name'),
-            'website' => $request->get( 'web-site'),
+            'website' => $request->get('web-site'),
             // 'address'=> $request->get( 'address'),
             'foundation_year' => $request->get('year'),
             'employee_count' => $request->get('count'),
-            // 'email'=> $request->get('company-email'),
             'about' => $request->get('company-name'),
 
         ]);
+
         $company->save();
 
 
+
+
+
+        $companyAdmin = new CompanyAdmin([
+            'company_id' => $company->id,
+            'first_name' => $request->get('first-name'),
+            'last_name' => $request->get('last-name'),
+            'email' => $request->get('company-email'),
+            'username' => $request->get('username'),
+            'password' => $request->get('password'),
+        ]);
+
+        $companyAdmin->save();
     }
 
 
