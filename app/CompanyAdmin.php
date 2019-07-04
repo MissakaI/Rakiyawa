@@ -8,6 +8,6 @@ class CompanyAdmin extends Model
 {
     //
     protected $fillable = [
-        'name', 'website', 'foundation_year', 'employee_count', 'about'
+        'company_id','first_name', 'last_name', 'email', 'username', 'password'
     ];
 }
