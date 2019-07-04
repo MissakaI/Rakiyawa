@@ -18,12 +18,12 @@ class CreateMembersTable extends Migration
             $table->string('first_name')->nullable(false);
             $table->string('last_name')->nullable(false);
             $table->string('email')->nullable(false);
-            $table->string('address_lane');
-            $table->string('address_city');
+            $table->string('address_lane')->nullable(true);
+            $table->string('address_city')->nullable(true);
             $table->string('username')->unique();
             $table->binary('password')->nullable(false);
-            $table->mediumText('biography');
-            $table->string('website');
+            $table->mediumText('biography')->nullable(true);
+            $table->string('website')->nullable(true);
 
             $table->json('contact_info');
             /* json format
