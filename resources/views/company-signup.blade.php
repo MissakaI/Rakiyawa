@@ -26,194 +26,13 @@
             <section class="section section-lg section-hero p-0">
                 <div class="container-fluid pt-lg-md" style="min-height:100vh;">
                     <div class="row justify-content-lg-start">
-
-                        <!--Sign In-->
-                        <div class="col-lg-5">
-                            <div class="card bg-secondary shadow border-0">
-                                <div class="card-header bg-white p-3 text-center">
-                                    <img src="img/brand/blue.png" style="width: 20rem" class="align-items-center">
-                                    <!--
-                                <div class="text-muted text-center mb-3">
-                                    <small>Sign in with</small>
-                                </div>
-                                <div class="btn-wrapper text-center">
-                                    <a href="#" class="btn btn-neutral btn-icon">
-                    <span class="btn-inner--icon">
-                      <img src="img/icons/common/github.svg">
-                    </span>
-                                        <span class="btn-inner--text">Github</span>
-                                    </a>
-                                    <a href="#" class="btn btn-neutral btn-icon">
-                    <span class="btn-inner--icon">
-                      <img src="img/icons/common/google.svg">
-                    </span>
-                                        <span class="btn-inner--text">Google</span>
-                                    </a>
-                                </div>
-                               -->
-                                </div>
-                                <div class="card-body px-lg-5 py-lg-5">
-                                    <div class="text-center text-muted mb-4">
-                                        <small>Sign in with credentials</small>
-                                    </div>
-                                    <form role="form">
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                                </div>
-                                                <input class="form-control" placeholder="Email" type="email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                                                </div>
-                                                <input class="form-control" placeholder="Password" type="password">
-                                            </div>
-                                        </div>
-                                        <div class="custom-control custom-control-alternative custom-checkbox">
-                                            <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                            <label class="custom-control-label" for=" customCheckLogin">
-                                                <span>Remember me</span>
-                                            </label>
-                                        </div>
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary my-4">Sign in</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-6">
-                                    <a href="#" class="text-light">
-                                        <small>Forgot password?</small>
-                                    </a>
-                                </div>
-                                <div class="col-6 text-right">
-                                    <a href="#" class="text-light">
-                                        <small>Create new account</small>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Register-->
-                        <div class="col-lg-5">
-                            <div class="card bg-secondary shadow border-0">
-                                <div class="card-header bg-white p-3 text-center">
-                                    <img src="img/brand/blue.png" style="width: 10rem" class="mb-2">
-                                    <div class="text-primary">
-                                        Let's build your career with us
-                                    </div>
-                                </div>
-                                <div class="card-body px-lg-5 py-lg-5">
-                                    <!--<div class="text-center text-muted mb-4">
-                                    <small>Sign in with credentials</small>
-                                </div>-->
-                                    <form role="form">
-
-                                        <!--registration page 1 -->
-                                        <div id="reg-pg-1">
-                                            <div class="form-group mb-3">
-                                                <div class="input-group input-group-alternative">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
-                                                    </div>
-                                                    <input class="form-control" placeholder="First Name" type="text" name="first-name">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group mb-3">
-                                                <div class="input-group input-group-alternative">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
-                                                    </div>
-                                                    <input class="form-control" placeholder="Last Name" type="text" name="last-name">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group mb-3">
-                                                <div class="input-group input-group-alternative">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                                    </div>
-                                                    <input class="form-control" placeholder="Email" type="email" name="email">
-                                                </div>
-                                            </div>
-                                            <!--<div class="custom-control custom-control-alternative custom-checkbox">
-                                            <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                            <label class="custom-control-label" for=" customCheckLogin">
-                                                <span>Remember me</span>
-                                            </label>
-                                        </div>-->
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-primary my-4">Next</button>
-                                            </div>
-                                        </div>
-
-                                        <!--registration page 2 -->
-                                        <div id="reg-pg-2">
-                                            <div class="form-group mb-3">
-                                                <div class="input-group input-group-alternative">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
-                                                    </div>
-                                                    <input class="form-control" placeholder="Username" type="text">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group mb-3">
-                                                <div class="input-group input-group-alternative">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                                                    </div>
-                                                    <input class="form-control" placeholder="Password" type="password">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group mb-3">
-                                                <div class="input-group input-group-alternative">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                                                    </div>
-                                                    <input class="form-control" placeholder="Re-enter Password" type="password">
-                                                </div>
-                                            </div>
-                                            <div class="custom-control custom-control-alternative custom-checkbox">
-                                                <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                                <label class="custom-control-label" for=" customCheckLogin">
-                                                    <span>Agree to Terms of Conditions</span>
-                                                </label>
-                                            </div>
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-primary my-4">Accept & Join</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-6">
-                                    <!--                                <a href="#" class="text-dark">-->
-                                    <!--                                    <small>Forgot password?</small>-->
-                                    <!--                                </a>-->
-                                </div>
-                                <div class="col-6 text-right">
-                                    <a href="#" class="text-dark">
-                                        <small>Already has an account. Sign In</small>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                         <!-- company resgitr -->
                         <div class="col-lg-5">
                             <div class="card bg-secondary shadow border-0">
                                 <div class="card-header bg-white p-3 text-center">
                                     <img src="img/brand/blue.png" style="width: 10rem" class="mb-2">
                                     <div class="text-primary">
-                                        Find the best employer fro your company
+                                        Find the best employer for your company
                                     </div>
                                 </div>
                                 <div class="card-body px-lg-5 py-lg-5">
@@ -285,9 +104,11 @@
                                                 <span>Remember me</span>
                                             </label>
                                         </div>-->
-                                            <div class="text-center">
+
+                                            <!-- <div class="text-center">
                                                 <button type="submit" class="btn btn-primary my-4">Sign Up</button>
-                                            </div>
+                                            </div> -->
+
                                         </div>
 
                                         <!--registration page 2 -->
