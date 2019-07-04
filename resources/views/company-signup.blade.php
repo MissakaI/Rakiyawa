@@ -39,7 +39,8 @@
                                     <!--<div class="text-center text-muted mb-4">
                                     <small>Sign in with credentials</small>
                                 </div>-->
-                                    <form role="form" method="post" action="{{url('company')}}">
+                                    <form method="POST" action="{{url('company')}}">
+                                        {{csrf_field()}}
                                         <!--registration page 1 -->
                                         <div id="reg-pg-1">
                                             <div class="form-group mb-3">
@@ -98,17 +99,6 @@
                                                     <input class="form-control" placeholder="About" type="email" name="about">
                                                 </div>
                                             </div>
-                                            <!--<div class="custom-control custom-control-alternative custom-checkbox">
-                                            <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                            <label class="custom-control-label" for=" customCheckLogin">
-                                                <span>Remember me</span>
-                                            </label>
-                                        </div>-->
-
-                                            <!-- <div class="text-center">
-                                                <button type="submit" class="btn btn-primary my-4">Sign Up</button>
-                                            </div> -->
-
                                         </div>
 
                                         <!--registration page 2 -->
@@ -146,7 +136,7 @@
                                                 </label>
                                             </div>
                                             <div class="text-center">
-                                                <button type="button" class="btn btn-primary my-4">Accept & Join</button>
+                                                <button type="submit" class="btn btn-primary my-4">Accept & Join</button>
                                             </div>
                                         </div>
                                     </form>
@@ -154,9 +144,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-6">
-                                    <!--                                <a href="#" class="text-dark">-->
-                                    <!--                                    <small>Forgot password?</small>-->
-                                    <!--                                </a>-->
+
                                 </div>
                                 <div class="col-6 text-right">
                                     <a href="#" class="text-dark">

@@ -23,15 +23,15 @@ Route::get('/companylogin', function () {
     return view('company-login');
 });
 // Route::get('/', 'CompanyController@addCompany');
-Route::post('/company','CompanyController@store');
+Route::post('/company', 'CompanyController@signup');
 
 Route::get('/user',function (){
     return view('user-profile');
 });
 
-Route::get('/company',function (){
-    return view('company-profile');
-});
+// Route::get('/company',function (){
+//     return view('company-profile');
+// });
 
 Route::get('/useredit',function (){
     return view('user-edit');

@@ -33,20 +33,20 @@ class CompanyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function signup(Request $request)
     {
         //
         $company = new Company([
             'name' => $request->get( 'company-name'),
             'website' => $request->get( 'web-site'),
-            'address'=> $request->get( 'address'),
+            // 'address'=> $request->get( 'address'),
             'foundation_year' => $request->get('year'),
             'employee_count' => $request->get('count'),
-            'email'=> $request->get('company-email'),
+            // 'email'=> $request->get('company-email'),
             'about' => $request->get('company-name'),
+
         ]);
         $company->save();
-
 
 
     }
