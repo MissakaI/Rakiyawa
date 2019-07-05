@@ -59,6 +59,11 @@ Route::get('/vacancy',function (){
     return view('user-vacancy');
 });
 
+Route::get('/vacancyview', function () {
+    return view('vacancy-view');
+});
+
+
 Route::post('/save','Register@store');
 
 Route::post('/vancancy_store','VacancyController@store');//vacancyform store data;
@@ -70,7 +75,7 @@ Route::get('/delete/{id}','VacancyController@destroy'); //delete record
 Route::get('/edit/{id}','VacancyController@edit'); //edit table
 
 Route::post('/vacancy_update','VacancyController@update'); //update table
- 
+
 Route::get('/member/{id}','MemberController@get');
 Route::post('/member','MemberController@update');
 Route::post('/member-del/{id}','MemberController@delete');
