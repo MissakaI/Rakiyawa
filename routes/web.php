@@ -66,6 +66,6 @@ Route::get('/delete/{id}','VacancyController@destroy'); //delete record
 
 Route::get('/edit/{id}','VacancyController@edit'); //edit table
 
-Route::post('/{id}','VacancyController@update'); //update table
+Route::post('/vacancy_update','VacancyController@update'); //update table
  
 Route::get('/member/{id}','MemberController@get');

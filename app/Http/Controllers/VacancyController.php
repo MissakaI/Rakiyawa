@@ -47,7 +47,7 @@ class VacancyController extends Controller
         $savevacancy->description= $request->description;
         $savevacancy->brochure= $request->brochure;
         $savevacancy->contact_info = '{"number":"'.$request->contact_info.'"}';
-        $savevacancy->location= '{"number":"'.$request->location.'"}'; 
+        $savevacancy->location= '{"city":"'.$request->location.'"}'; 
         $savevacancy->save();
 
         return redirect('company');
@@ -90,18 +90,19 @@ class VacancyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,$id)
+    public function update(Request $request)
     {
+        $id = $request->id;
         $user= Vacancy::findOrFail($id);
 
         $user->company_id = $request['company_id'];
         $user->job_title = $request['job_title'];
         $user->job_position = $request['job_position'];
-        $user->deadline  = $request['deadline '];
+        $user->deadline  = $request['deadline'];
         $user->description = $request['description'];
         $user->brochure = $request['brochure'];
-        $user->contact_info = $request['contact_info'];
-        $user->location = $request['location'];
+        $user->contact_info ='{"number":"'.$request->contact_info.'"}';
+        $user->location = '{"city":"'.$request->location.'"}'; 
 
         $user->save();
 

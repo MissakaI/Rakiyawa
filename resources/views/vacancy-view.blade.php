@@ -18,6 +18,7 @@
             <td>Deadline</td>
             <td>Description</td>
             <td>Contact-Info</td>
+            <td>Location</td>
             <td>Action</td>
         </tr>
        
@@ -29,7 +30,8 @@
             <td><?php echo $row->job_position ?></td>
             <td><?php echo $row->deadline ?></td>
             <td><?php echo $row->description ?></td>
-            <td><?php echo $row->contact_info ?></td>
+            <td><?php echo $row->contact_info?></td>
+            <td><?php echo $row->location ?></td>
             
             <td>
                 <a  href="/edit/{{$row->id}}" class="btn btn-info" >Edit</a>

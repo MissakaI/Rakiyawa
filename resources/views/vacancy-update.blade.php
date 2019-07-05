@@ -8,9 +8,11 @@
 <section class="section">
     <div class="container">
         <div class="card mt-4 p-3">
-        <form action='' method="POST" class="from-horizontal">
+        <form action='/vacancy_update' method="POST" class="from-horizontal">
             {{csrf_field()}}
             <h3>Edit your Vacancy!</h3>
+
+            <input type="text" name = "id" value = {{$table->id}} hidden>
              
            <div class = "form-group">
                 <lable for="company_id" class="col-md-2 text-right">Company ID</lable>
