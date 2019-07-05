@@ -27,9 +27,9 @@ Route::get('/company',function (){
     return view('company-profile');
 });
 
-Route::get('/useredit',function (){
-    return view('user-edit');
-});
+//Route::get('/useredit',function (){
+//    return view('user-edit');
+//});
 
 Route::resource('vacancies','VacancyController');
 
