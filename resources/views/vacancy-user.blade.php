@@ -37,14 +37,14 @@
 
                     <div class="col-lg-4 order-lg-1">
                         <div class="card-profile-stats d-flex justify-content-center">
-                            <div>
-                                <span class="heading">30</span>
-                                <span class="description">Applicants</span>
-                            </div>
-                            <div>
-                                <span class="heading">{{$companyData->employee_count}}</span>
-                                <span class="description">Employees</span>
-                            </div>
+{{--                            <div>--}}
+{{--                                <span class="heading">30</span>--}}
+{{--                                <span class="description">Applicants</span>--}}
+{{--                            </div>--}}
+{{--                            <div>--}}
+{{--                                <span class="heading">{{$companyData->employee_count}}</span>--}}
+{{--                                <span class="description">Employees</span>--}}
+{{--                            </div>--}}
                             {{-- <div>--}}
                             {{-- <span class="heading">89</span>--}}
                             {{-- <span class="description">Comments</span>--}}
@@ -53,23 +53,23 @@
                     </div>
                     <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
                         <div class="card-profile-actions py-4 mt-lg-0">
-                            <a href="{{url('vacancy-view')}}" class="btn btn-sm btn-info mr-4">Vacancies</a>
-                            <a href="#" class="btn btn-sm btn-default float-right ">Message</a>
-                            <a href="#" class="btn btn-sm btn-warning float-right mr-4" data-toggle="modal" data-target="#modal-form">Edit</a>
+                            <a href="#" class="btn btn-sm btn-info mr-4">Apply</a>
+{{--                            <a href="#" class="btn btn-sm btn-default float-right ">Message</a>--}}
+{{--                            <a href="#" class="btn btn-sm btn-warning float-right mr-4" data-toggle="modal" data-target="#modal-form">Edit</a>--}}
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-5">
-                    <h3>{{$companyData->name}}</h3>
-                    <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i>Panadura</div>
-                    <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Software Startup</div>
-                    {{-- <div><i class="ni education_hat mr-2"></i>University of Colombo School of Computing</div>--}}
+                    <h3>{{$vacancy->job_title}}</h3>
+                    <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i>{{$vacancy->location}}</div>
+                    <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>{{$vacancy->job_position}}</div>
+                     <div><i class="ni education_hat mr-2"></i>{{$company->name}}</div>
                 </div>
                 <div class="mt-5 py-5 border-top text-center">
                     <div class="row justify-content-center">
                         <div class="col-lg-9">
-                            <p>{{$companyData->about}}</p>
-                            <a href="#">Show more</a>
+                            <p>{{$companyData->description}}</p>
+{{--                            <a href="#">Show more</a>--}}
                         </div>
                     </div>
                 </div>

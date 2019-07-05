@@ -106,8 +106,8 @@
                     </div>
                     <hr>
                     <div class="row mx-2 justify-content-end">
-                            <button class="btn btn-success" type="submit">Save</button>
-                            <button class="btn btn-danger" type="button">Delete</button>
+                            <button class="btn btn-success" type="submit" formaction="{{url('member')}}" formmethod="POST">Save</button>
+                            <button class="btn btn-danger" type="button" formaction="{{url('member-del/'.$user->id)}}" formmethod="POST">Delete</button>
                     </div>
                 </form>
             </div>
