@@ -18,12 +18,13 @@
                             </div>
                         </div>
                     </div>
+                    <input type="hidden" name="id" value="{{$user->id}}">
                     <div class="row mx-2 mt-4">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <div class="">
-                                    <input class="form-control form-control-alternative" type="text" placeholder="NIC"
-                                           name="NIC">
+                                    <input class="form-control form-control-alternative" type="text" placeholder="Username"
+                                           name="username" value="{{$user->username}}">
                                 </div>
                             </div>
                         </div>
@@ -31,7 +32,7 @@
                             <div class="form-group">
                                 <div class="">
                                     <input class="form-control form-control-alternative" type="text" placeholder="Email"
-                                           name="email">
+                                           name="email" value="{{$user->email}}">
                                 </div>
                             </div>
                         </div>
@@ -42,7 +43,7 @@
                             <div class="form-group">
                                 <div class="">
                                     <input class="form-control form-control-alternative" type="text"
-                                           placeholder="First Name" name="firstname">
+                                           placeholder="First Name" name="firstname" value="{{$user->first_name}}">
                                 </div>
                             </div>
                         </div>
@@ -50,25 +51,7 @@
                             <div class="form-group">
                                 <div class="">
                                     <input class="form-control form-control-alternative" type="text"
-                                           placeholder="Last Name" name="lastname">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mx-2">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <div class="">
-                                    <input class="form-control form-control-alternative" type="text"
-                                           placeholder="Date of Birth" name="dob">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <div class="">
-                                    <input class="form-control form-control-alternative" type="text"
-                                           placeholder="Gender" name="gender">
+                                           placeholder="Last Name" name="lastname" value="{{$user->last_name}}">
                                 </div>
                             </div>
                         </div>
@@ -78,7 +61,25 @@
                             <div class="form-group">
                                 <div class="">
                                     <input class="form-control form-control-alternative" type="text"
-                                           placeholder="Mobile Number" name="mbnum">
+                                           placeholder="Address Lane" name="address_lane" value="{{$user->address_lane}}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="">
+                                    <input class="form-control form-control-alternative" type="text"
+                                           placeholder="Address City" name="address_city" value="{{$user->address_city}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="">
+                                    <input class="form-control form-control-alternative" type="text"
+                                           placeholder="Mobile Number" name="mbnum" value="{{$user->contact_info}}">
                                 </div>
                             </div>
                         </div>

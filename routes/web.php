@@ -35,17 +35,17 @@ Route::get('/company-login', function () {
     return view('company-login');
 });
 
-Route::get('/user',function (){
-    return view('user-profile');
+Route::get('/user/{member}',function (App\Member $member){
+    return view('user-profile',['user'=>$member]);
 });
 
 // Route::get('/company',function (){
 //     return view('company-profile');
 // });
 
-Route::get('/useredit',function (){
-    return view('user-edit');
-});
+//Route::get('/useredit',function (){
+//    return view('user-edit');
+//});
 
 
 Route::get('/vacancyedit',function (){
