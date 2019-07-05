@@ -47,7 +47,6 @@ Route::get('/user/{member}',function (App\Member $member){
 //    return view('user-edit');
 //});
 
-Route::resource('vacancies','VacancyController');
 
 Route::get('/vacancyedit',function (){
     return view('vacancy-edit');
@@ -59,4 +58,14 @@ Route::get('/vacancy',function (){
 
 Route::post('/save','Register@store');
 
+Route::post('/vancancy_store','VacancyController@store');//vacancyform store data;
+
+Route::get('/vacancy-view','VacancyController@index'); //vacancy view;
+
+Route::get('/delete/{id}','VacancyController@destroy'); //delete record
+
+Route::get('/edit/{id}','VacancyController@edit'); //edit table
+
+Route::post('/vacancy_update','VacancyController@update'); //update table
+ 
 Route::get('/member/{id}','MemberController@get');
