@@ -33,7 +33,7 @@ class Register extends Controller
         $member->profile_picture = " ";
         $member->save();
 
-        // return redirect('');
+         return redirect('');
         // $data = Member::all();
         // dd($data);
 

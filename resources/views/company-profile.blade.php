@@ -36,7 +36,7 @@
                     </div>
                     <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
                         <div class="card-profile-actions py-4 mt-lg-0">
-                            <a href="#" class="btn btn-sm btn-info mr-4">Vacancies</a>
+                            <a href="{{url('vacancy-view')}}" class="btn btn-sm btn-info mr-4">Vacancies</a>
                             <a href="#" class="btn btn-sm btn-default float-right">Message</a>
                         </div>
                     </div>
