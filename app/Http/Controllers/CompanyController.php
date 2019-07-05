@@ -62,8 +62,9 @@ class CompanyController extends Controller
         ]);
 
         $companyAdmin->save();
-        return redirect( 'companyloginpage');
+        return redirect('companyloginpage');
     }
+    //TODO
     public function showCompanyDetails()
     {
 
@@ -76,12 +77,12 @@ class CompanyController extends Controller
     public function showCompanyDetailsAdmin(Request $request)
     {
 
-        if ($request->session()->has('company_id')){
+        if ($request->session()->has('company_id')) {
             $com_id = $request->session()->get('company_id');
-        // $company = company::findOrFail($id);
+            // $company = company::findOrFail($id);
             $companyData = DB::table('companies')->where('id', $com_id)->first();
             return view('company-profile-admin')->with('companyData', $companyData);
-        }else{
+        } else {
             return redirect('companylogin');
         }
 
@@ -123,26 +124,22 @@ class CompanyController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function login(Request $request){
-        $username = $request->get( 'username');
+    public function login(Request $request)
+    {
+        $username = $request->get('username');
         $password = $request->get('password');
 
-        $data = DB::table( 'company_admins')->where( 'username', $username)->first();
-        if($data!=null){
-            if($password==$data->password){
-                $request->session()->put('company_id',$data->id);
-                return redirect( 'companyprofile');
-            }else{
-                return redirect( 'companyloginpage');
+        $data = DB::table('company_admins')->where('username', $username)->first();
+        if ($data != null) {
+            if ($password == $data->password) {
+                $request->session()->put('company_id', $data->id);
+                return redirect('companyprofile');
+            } else {
+                return redirect('companyloginpage');
             }
-
-        }else{
-            return redirect( 'companyloginpage');
+        } else {
+            return redirect('companyloginpage');
         }
-
-
-
-
     }
 
     public function update(Request $request, $id)
@@ -161,7 +158,6 @@ class CompanyController extends Controller
 
         $company->save();
         return redirect('companyprofile');
-
     }
 
     /**

@@ -31,6 +31,9 @@ Route::post('company/update/{id}', 'CompanyController@update');
 Route::post( 'companyLogin', 'CompanyController@login');
 
 
+Route::post( 'userLogin', 'Register@login');
+
+
 // Route::get('/company-login', function () {
 //     return view('company-login');
 // });

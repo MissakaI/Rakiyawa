@@ -20,38 +20,50 @@
     <link type="text/css" href="css/docs.min.css" rel="stylesheet">
 </head>
 
-<body
-    style="background-image: url('img/theme/worker2.jpg');background-size:cover;background-attachment:fixed">
-<main>
-    <div class="position-relative">
-        <section class="section section-lg section-hero p-0">
-            <div class="container-fluid pt-lg-md" style="min-height:100vh;">
-                <div class="row justify-content-lg-start">
+<body style="background-image: url('img/theme/worker2.jpg');background-size:cover;background-attachment:fixed">
+    <main>
+        <div class="position-relative">
+            <section class="section section-lg section-hero p-0">
+                <div class="container-fluid pt-lg-md" style="min-height:100vh;">
+                    <div class="row justify-content-lg-start">
 
-                    <!--Sign In-->
-                    <div class="col-lg-5">
-                        <div class="card bg-secondary shadow border-0">
-                            <div class="card-header bg-white p-3 text-center">
-                                <img src="img/brand/blue.png" style="width: 10rem" class="mb-2">
-                                <div class="text-primary">
-                                    Let's build your career with us
+                        <!--Sign In-->
+                        <div class="col-lg-5">
+                            <div class="card bg-secondary shadow border-0">
+                                <div class="card-header bg-white p-3 text-center">
+                                    <img src="img/brand/blue.png" style="width: 20rem" class="align-items-center">
+                                    <!--
+                                <div class="text-muted text-center mb-3">
+                                    <small>Sign in with</small>
                                 </div>
-                            </div>
-                            <div class="card-body px-lg-5 py-lg-5">
-                                <div class="text-center text-muted mb-4">
-                                    <small>Sign in with credentials</small>
+                                <div class="btn-wrapper text-center">
+                                    <a href="#" class="btn btn-neutral btn-icon">
+                    <span class="btn-inner--icon">
+                      <img src="img/icons/common/github.svg">
+                    </span>
+                                        <span class="btn-inner--text">Github</span>
+                                    </a>
+                                    <a href="#" class="btn btn-neutral btn-icon">
+                    <span class="btn-inner--icon">
+                      <img src="img/icons/common/google.svg">
+                    </span>
+                                        <span class="btn-inner--text">Google</span>
+                                    </a>
+                                </div>
+                               -->
                                 </div>
                                 <div class="card-body px-lg-5 py-lg-5">
                                     <div class="text-center text-muted mb-4">
                                         <small>Sign in with credentials</small>
                                     </div>
-                                    <form role="form">
+                                    <form role="form" method="POST" action="{{url('userLogin')}}">
+                                        {{csrf_field()}}
                                         <div class="form-group mb-3">
                                             <div class="input-group input-group-alternative">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Email" type="email">
+                                                <input class="form-control" placeholder="User Name" name="login-username" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -59,7 +71,7 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Password" type="password">
+                                                <input class="form-control" placeholder="Password" name="login-password" type="password">
                                             </div>
                                         </div>
                                         <div class="custom-control custom-control-alternative custom-checkbox">
@@ -69,7 +81,7 @@
                                             </label>
                                         </div>
                                         <div class="text-center">
-                                            <button type="button" class="btn btn-primary my-4">Sign in</button>
+                                            <button type="submit" class="btn btn-primary my-4">Sign in</button>
                                         </div>
                                     </form>
                                 </div>
@@ -101,17 +113,17 @@
                                     <!--<div class="text-center text-muted mb-4">
                                     <small>Sign in with credentials</small>
                                 </div>-->
-                                <form role="form" method="post" action="/save">
-                                {{csrf_field()}}
-                                    <!--registration page 1 -->
-                                    <div id="reg-pg-1">
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i
-                                                            class="ni ni-circle-08"></i></span>
+                                    <form role="form" method="post" action="/save">
+                                        {{csrf_field()}}
+                                        <!--registration page 1 -->
+                                        <div id="reg-pg-1">
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="First Name" type="text" name="firstname">
                                                 </div>
-                                                <input class="form-control" placeholder="First Name" type="text" name="firstname">
                                             </div>
 
                                             <div class="form-group mb-3">
@@ -119,9 +131,8 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
                                                     </div>
-                                                    <input class="form-control" placeholder="Last Name" type="text" name="last-name">
+                                                    <input class="form-control" placeholder="Last Name" type="text" name="lastname">
                                                 </div>
-                                                <input class="form-control" placeholder="Last Name" type="text" name="lastname">
                                             </div>
 
                                             <div class="form-group mb-3">
@@ -131,39 +142,34 @@
                                                     </div>
                                                     <input class="form-control" placeholder="Email" type="email" name="email">
                                                 </div>
-                                                <input class="form-control" placeholder="Email" type="email"
-                                                       name="email">
                                             </div>
-                                        </div>
 
-                                        <div class="form-group mb-3">
-                                <div class="input-group input-group-alternative">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i
-                                                class="ni ni-circle-08"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Address Lane" type="text" name="Address_Lane">
-                                </div>
-                            </div>
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Address Lane" type="text" name="Address_Lane">
+                                                </div>
+                                            </div>
 
-                            <div class="form-group mb-3">
-                                <div class="input-group input-group-alternative">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i
-                                                class="ni ni-circle-08"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Address City" type="text" name="Address_City">
-                                </div>
-                            </div>
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Address City" type="text" name="Address_City">
+                                                </div>
+                                            </div>
 
-                                        <!--<div class="custom-control custom-control-alternative custom-checkbox">
+                                            <!--<div class="custom-control custom-control-alternative custom-checkbox">
                                             <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
                                             <label class="custom-control-label" for=" customCheckLogin">
                                                 <span>Remember me</span>
                                             </label>
                                         </div>-->
 
-                                    </div>
+                                        </div>
 
                                         <!--registration page 2 -->
                                         <div id="reg-pg-2">
@@ -172,78 +178,67 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
                                                     </div>
-                                                    <input class="form-control" placeholder="Username" type="text">
+                                                    <input class="form-control" placeholder="Username" type="text" name="username">
                                                 </div>
-                                                <input class="form-control" placeholder="Username" type="text" name="username">
                                             </div>
 
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i
-                                                            class="ni ni-lock-circle-open"></i></span>
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Password" type="password" name="password">
                                                 </div>
-                                                <input class="form-control" placeholder="Password" type="password" name="password">
                                             </div>
 
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i
-                                                            class="ni ni-lock-circle-open"></i></span>
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Re-enter Password" type="password">
                                                 </div>
-                                                <input class="form-control" placeholder="Re-enter Password"
-                                                       type="password">
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"></span>
+                                                    </div>
+
+                                                    <textarea class="form-control" name="Biography" id="" cols="5" rows="2" placeholder="Biography"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Website" type="text" name="Website">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Contact Info" type="text" name="Contact_Info">
+                                                </div>
+                                            </div>
+                                            <div class="custom-control custom-control-alternative custom-checkbox">
+                                                <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+                                                <label class="custom-control-label" for=" customCheckLogin">
+                                                    <span>Agree to Terms of Conditions</span>
+                                                </label>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary my-4">Accept & Join</button>
                                             </div>
                                         </div>
-
-                                        <div class="form-group mb-3">
-                                <div class="input-group input-group-alternative">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"></span>
-                                    </div>
-
-                                    <textarea class="form-control" name="Biography" id="" cols="5" rows="2" placeholder="Biography"></textarea>
+                                    </form>
                                 </div>
-                            </div>
-
-                            <div class="form-group mb-3">
-                                <div class="input-group input-group-alternative">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i
-                                                class="ni ni-circle-08"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Website" type="text" name="Website">
-                                </div>
-                            </div>
-
-                            <div class="form-group mb-3">
-                                <div class="input-group input-group-alternative">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i
-                                                class="ni ni-circle-08"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Contact Info" type="text" name="Contact_Info">
-                                </div>
-                            </div>
-                            <div class="custom-control custom-control-alternative custom-checkbox">
-                                <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                <label class="custom-control-label" for=" customCheckLogin">
-                                    <span>Agree to Terms of Conditions</span>
-                                </label>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary my-4">Accept & Join</button>
-                            </div>
-                        </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-6">
-                                <!--                                <a href="#" class="text-dark">-->
-                                <!--                                    <small>Forgot password?</small>-->
-                                <!--                                </a>-->
                             </div>
                             <div class="row mt-3">
                                 <div class="col-6">
@@ -261,7 +256,6 @@
 
 
                     </div>
-
                 </div>
             </section>
         </div>
