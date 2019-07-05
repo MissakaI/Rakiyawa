@@ -30,46 +30,46 @@
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
                                 <a href="#">
-                                    <img src="/img/theme/team-4-800x800.jpg" class="rounded-circle">
+                                    <img src="{{url('/img/theme/team-4-800x800.jpg')}}" class="rounded-circle">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
                             <div class="card-profile-actions py-4 mt-lg-0">
                                 <a href="#" class="btn btn-sm btn-info mr-4">Invite</a>
-                                <a href="#" class="btn btn-sm btn-default float-right">Message</a>
+                                <a href="#" class="btn btn-sm btn-default mr-4">Message</a>
+                                <a href="{{url('member/'.$user->id)}}" class="btn btn-sm btn-warning float-right">Settings</a>
                             </div>
                         </div>
                         <div class="col-lg-4 order-lg-1">
-                            <div class="card-profile-stats d-flex justify-content-center">
-                                <div>
-                                    <span class="heading">22</span>
-                                    <span class="description">Views</span>
-                                </div>
-                                <div>
-                                    <span class="heading">10</span>
-                                    <span class="description">Invites</span>
-                                </div>
+{{--                            <div class="card-profile-stats d-flex justify-content-center">--}}
+{{--                                <div>--}}
+{{--                                    <span class="heading">22</span>--}}
+{{--                                    <span class="description">Views</span>--}}
+{{--                                </div>--}}
+{{--                                <div>--}}
+{{--                                    <span class="heading">10</span>--}}
+{{--                                    <span class="description">Invites</span>--}}
+{{--                                </div>--}}
 {{--                                <div>--}}
 {{--                                    <span class="heading">89</span>--}}
 {{--                                    <span class="description">Comments</span>--}}
 {{--                                </div>--}}
-                            </div>
+{{--                            </div>--}}
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <h3>Jessica Jones
-                            <span class="font-weight-light">, 27</span>
+                        <h3>{{$user->first_name.' '.$user->last_name}}
                         </h3>
-                        <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i>Kirulapone, Colombo 3</div>
-                        <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Quality Assurance Engineer</div>
-                        <div><i class="ni education_hat mr-2"></i>University of Colombo School of Computing</div>
+                        <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i>{{$user->address_lane.', '.$user->address_city}}</div>
+{{--                        <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Quality Assurance Engineer</div>--}}
+{{--                        <div><i class="ni education_hat mr-2"></i>University of Colombo School of Computing</div>--}}
                     </div>
                     <div class="mt-5 py-5 border-top text-center">
                         <div class="row justify-content-center">
                             <div class="col-lg-9">
-                                <p>I earned a Bachelor’s degree in Information Systems from the UCSC. While attending UCSC, I began my software engineering career as a System Analyst for General Corporation. There I became one of the divisions top analysts.</p>
-                                <a href="#">Show more</a>
+                                <p>{{$user->biography}}</p>
+{{--                                <a href="#">Show more</a>--}}
                             </div>
                         </div>
                     </div>
