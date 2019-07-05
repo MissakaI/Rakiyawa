@@ -62,6 +62,7 @@ class CompanyController extends Controller
         ]);
 
         $companyAdmin->save();
+        return redirect( 'companyloginpage');
     }
     public function showCompanyDetails()
     {
@@ -72,12 +73,19 @@ class CompanyController extends Controller
         // echo $companyData->employee_count;
 
     }
-    public function showCompanyDetailsAdmin()
+    public function showCompanyDetailsAdmin(Request $request)
     {
 
-        $companyData = DB::table('companies')->where('id', '2')->first();
+        if ($request->session()->has('company_id')){
+            $com_id = $request->session()->get('company_id');
+        // $company = company::findOrFail($id);
+            $companyData = DB::table('companies')->where('id', $com_id)->first();
+            return view('company-profile-admin')->with('companyData', $companyData);
+        }else{
+            return redirect('companylogin');
+        }
 
-        return view('company-profile-admin')->with('companyData', $companyData);
+
         // echo $companyData->employee_count;
 
     }
@@ -122,13 +130,14 @@ class CompanyController extends Controller
         $data = DB::table( 'company_admins')->where( 'username', $username)->first();
         if($data!=null){
             if($password==$data->password){
+                $request->session()->put('company_id',$data->id);
                 return redirect( 'companyprofile');
             }else{
-                return redirect('companylogin');
+                return redirect( 'companyloginpage');
             }
 
         }else{
-            return redirect( 'companylogin');
+            return redirect( 'companyloginpage');
         }
 
 
