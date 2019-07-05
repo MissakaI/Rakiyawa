@@ -26,6 +26,10 @@ Route::get('/companylogin', function () {
 Route::post('/company', 'CompanyController@signup');
 
 Route::get( '/company', 'CompanyController@showCompanyDetails');
+Route::get('/companyprofile', 'CompanyController@showCompanyDetailsAdmin');
+Route::post('company/update/{id}', 'CompanyController@update');
+Route::post( 'companyLogin', 'CompanyController@login');
+
 
 Route::get('/company-login', function () {
     return view('company-login');
