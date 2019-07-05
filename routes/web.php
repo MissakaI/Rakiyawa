@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/companysignup', function () {
     return view( 'company-signup');
 });
-Route::get('/companylogin', function () {
+Route::get('/companyloginpage', function () {
     return view('company-login');
 });
 // Route::get('/', 'CompanyController@addCompany');
@@ -31,9 +31,9 @@ Route::post('company/update/{id}', 'CompanyController@update');
 Route::post( 'companyLogin', 'CompanyController@login');
 
 
-Route::get('/company-login', function () {
-    return view('company-login');
-});
+// Route::get('/company-login', function () {
+//     return view('company-login');
+// });
 
 Route::get('/user/{member}',function (App\Member $member){
     return view('user-profile',['user'=>$member]);
