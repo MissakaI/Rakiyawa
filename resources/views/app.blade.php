@@ -8,16 +8,16 @@
     <meta name="author" content="Creative Tim">
     <title>Jobba - @yield('title')</title>
     <!-- Favicon -->
-    <link href="img/brand/favicon.png" rel="icon" type="image/png">
+    <link href="{{url('img/brand/favicon.png')}}" rel="icon" type="image/png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Icons -->
-    <link href="vendor/nucleo/css/nucleo.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{url('vendor/nucleo/css/nucleo.css')}}" rel="stylesheet">
+    <link href="{{url('vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     <!-- Argon CSS -->
-    <link type="text/css" href="css/argon.css?v=1.0.1" rel="stylesheet">
+    <link type="text/css" href="{{url('css/argon.css?v=1.0.1')}}" rel="stylesheet">
     <!-- Docs CSS -->
-    <link type="text/css" href="css/docs.min.css" rel="stylesheet">
+    <link type="text/css" href="{{url('css/docs.min.css')}}" rel="stylesheet">
 </head>
 
 <body class="@yield('body-class')">
@@ -25,7 +25,7 @@
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
         <div class="container">
             <a class="navbar-brand mr-lg-5" href="./index.html">
-                <img src="img/brand/white.png">
+                <img src="{{url('img/brand/white.png')}}">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
                     aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +35,8 @@
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
-                            <a href="./index.html">
-                                <img src="img/brand/blue.png">
+                            <a href="{{url('index.html')}}">
+                                <img src="{{url('img/brand/blue.png')}}">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -99,10 +99,10 @@
                             <span class="nav-link-inner--text">Examples</span>
                         </a>
                         <div class="dropdown-menu">
-                            <a href="./examples/landing.html" class="dropdown-item">Landing</a>
-                            <a href="./examples/profile.html" class="dropdown-item">Profile</a>
-                            <a href="./examples/login.html" class="dropdown-item">Login</a>
-                            <a href="./examples/register.html" class="dropdown-item">Register</a>
+                            <a href="{{url('examples/landing.html')}}" class="dropdown-item">Landing</a>
+                            <a href="{{url('examples/profile.html')}}" class="dropdown-item">Profile</a>
+                            <a href="{{url('examples/login.html')}}" class="dropdown-item">Login</a>
+                            <a href="{{url('examples/register.html')}}" class="dropdown-item">Register</a>
                         </div>
                     </li>
                 </ul>
@@ -147,16 +147,16 @@
     </div>
 </footer>
 <!-- Core -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/popper/popper.min.js"></script>
-<script src="vendor/bootstrap/bootstrap.min.js"></script>
-<script src="vendor/headroom/headroom.min.js"></script>
+<script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{url('vendor/popper/popper.min.js')}}"></script>
+<script src="{{url('vendor/bootstrap/bootstrap.min.js')}}"></script>
+<script src="{{url('vendor/headroom/headroom.min.js')}}"></script>
 <!-- Optional JS -->
-<script src="vendor/onscreen/onscreen.min.js"></script>
-<script src="vendor/nouislider/js/nouislider.min.js"></script>
-<script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="{{url('vendor/onscreen/onscreen.min.js')}}"></script>
+<script src="{{url('vendor/nouislider/js/nouislider.min.js')}}"></script>
+<script src="{{url('vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
 <!-- Argon JS -->
-<script src="js/argon.js?v=1.0.1"></script>
+<script src="{{url('js/argon.js?v=1.0.1')}}"></script>
 </body>
 
 </html>

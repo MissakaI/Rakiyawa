@@ -32,86 +32,73 @@
                     <div class="col-lg-5">
                         <div class="card bg-secondary shadow border-0">
                             <div class="card-header bg-white p-3 text-center">
-                                <img src="img/brand/blue.png" style="width: 20rem" class="align-items-center">
-                                <!--
-                                <div class="text-muted text-center mb-3">
-                                    <small>Sign in with</small>
-                                </div>
-                                <div class="btn-wrapper text-center">
-                                    <a href="#" class="btn btn-neutral btn-icon">
-                    <span class="btn-inner--icon">
-                      <img src="img/icons/common/github.svg">
-                    </span>
-                                        <span class="btn-inner--text">Github</span>
-                                    </a>
-                                    <a href="#" class="btn btn-neutral btn-icon">
-                    <span class="btn-inner--icon">
-                      <img src="img/icons/common/google.svg">
-                    </span>
-                                        <span class="btn-inner--text">Google</span>
-                                    </a>
-                                </div>
-                               -->
-                            </div>
-                            <div class="card-body px-lg-5 py-lg-5">
-                                <div class="text-center text-muted mb-4">
-                                    <small>Sign in with credentials</small>
-                                </div>
-                                <form role="form">
-                                    <div class="form-group mb-3">
-                                        <div class="input-group input-group-alternative">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                            </div>
-                                            <input class="form-control" placeholder="Email" type="email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group input-group-alternative">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i
-                                                        class="ni ni-lock-circle-open"></i></span>
-                                            </div>
-                                            <input class="form-control" placeholder="Password" type="password">
-                                        </div>
-                                    </div>
-                                    <div class="custom-control custom-control-alternative custom-checkbox">
-                                        <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                        <label class="custom-control-label" for=" customCheckLogin">
-                                            <span>Remember me</span>
-                                        </label>
-                                    </div>
-                                    <div class="text-center">
-                                        <button type="button" class="btn btn-primary my-4">Sign in</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-6">
-                                <a href="#" class="text-light">
-                                    <small>Forgot password?</small>
-                                </a>
-                            </div>
-                            <div class="col-6 text-right">
-                                <a href="#" class="text-light">
-                                    <small>Create new account</small>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Register-->
-                    <div class="col-lg-5">
-                        <div class="card bg-secondary shadow border-0">
-                            <div class="card-header bg-white p-3 text-center">
                                 <img src="img/brand/blue.png" style="width: 10rem" class="mb-2">
                                 <div class="text-primary">
                                     Let's build your career with us
                                 </div>
                             </div>
                             <div class="card-body px-lg-5 py-lg-5">
-                                <!--<div class="text-center text-muted mb-4">
+                                <div class="text-center text-muted mb-4">
+                                    <small>Sign in with credentials</small>
+                                </div>
+                                <div class="card-body px-lg-5 py-lg-5">
+                                    <div class="text-center text-muted mb-4">
+                                        <small>Sign in with credentials</small>
+                                    </div>
+                                    <form role="form">
+                                        <div class="form-group mb-3">
+                                            <div class="input-group input-group-alternative">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                                </div>
+                                                <input class="form-control" placeholder="Email" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group input-group-alternative">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                                </div>
+                                                <input class="form-control" placeholder="Password" type="password">
+                                            </div>
+                                        </div>
+                                        <div class="custom-control custom-control-alternative custom-checkbox">
+                                            <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+                                            <label class="custom-control-label" for=" customCheckLogin">
+                                                <span>Remember me</span>
+                                            </label>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-primary my-4">Sign in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <a href="#" class="text-light">
+                                        <small>Forgot password?</small>
+                                    </a>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <a href="#" class="text-light">
+                                        <small>Create new account</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Register-->
+                        <div class="col-lg-5">
+                            <div class="card bg-secondary shadow border-0">
+                                <div class="card-header bg-white p-3 text-center">
+                                    <img src="img/brand/blue.png" style="width: 10rem" class="mb-2">
+                                    <div class="text-primary">
+                                        Let's build your career with us
+                                    </div>
+                                </div>
+                                <div class="card-body px-lg-5 py-lg-5">
+                                    <!--<div class="text-center text-muted mb-4">
                                     <small>Sign in with credentials</small>
                                 </div>-->
                                 <form role="form" method="post" action="/save">
@@ -126,24 +113,26 @@
                                                 </div>
                                                 <input class="form-control" placeholder="First Name" type="text" name="firstname">
                                             </div>
-                                        </div>
 
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i
-                                                            class="ni ni-circle-08"></i></span>
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Last Name" type="text" name="last-name">
                                                 </div>
                                                 <input class="form-control" placeholder="Last Name" type="text" name="lastname">
                                             </div>
-                                        </div>
 
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Email" type="email" name="email">
                                                 </div>
-                                                <input class="form-control" placeholder="Email" type="email" name="email">
+                                                <input class="form-control" placeholder="Email" type="email"
+                                                       name="email">
                                             </div>
                                         </div>
 
@@ -173,36 +162,38 @@
                                                 <span>Remember me</span>
                                             </label>
                                         </div>-->
-                                       
+
                                     </div>
 
-                                    <!--registration page 2 -->
-                                    <div id="reg-pg-2">
+                                        <!--registration page 2 -->
+                                        <div id="reg-pg-2">
+                                            <div class="form-group mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Username" type="text">
+                                                </div>
+                                                <input class="form-control" placeholder="Username" type="text" name="username">
+                                            </div>
+
                                         <div class="form-group mb-3">
                                             <div class="input-group input-group-alternative">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i
-                                                            class="ni ni-circle-08"></i></span>
-                                                </div>
-                                                <input class="form-control" placeholder="Username" type="text" name="username">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                                            class="ni ni-lock-circle-open"></i></span>
                                                 </div>
                                                 <input class="form-control" placeholder="Password" type="password" name="password">
                                             </div>
-                                        </div>
 
                                         <div class="form-group mb-3">
                                             <div class="input-group input-group-alternative">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                                    <span class="input-group-text"><i
+                                                            class="ni ni-lock-circle-open"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Re-enter Password" type="password">
+                                                <input class="form-control" placeholder="Re-enter Password"
+                                                       type="password">
                                             </div>
                                         </div>
 
@@ -211,7 +202,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"></span>
                                     </div>
-               
+
                                     <textarea class="form-control" name="Biography" id="" cols="5" rows="2" placeholder="Biography"></textarea>
                                 </div>
                             </div>
@@ -250,51 +241,57 @@
                         </div>
                         <div class="row mt-3">
                             <div class="col-6">
-<!--                                <a href="#" class="text-dark">-->
-<!--                                    <small>Forgot password?</small>-->
-<!--                                </a>-->
+                                <!--                                <a href="#" class="text-dark">-->
+                                <!--                                    <small>Forgot password?</small>-->
+                                <!--                                </a>-->
                             </div>
-                            <div class="col-6 text-right">
-                                <a href="#" class="text-dark">
-                                    <small>Already has an account. Sign In</small>
-                                </a>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <!--                                <a href="#" class="text-dark">-->
+                                    <!--                                    <small>Forgot password?</small>-->
+                                    <!--                                </a>-->
+                                </div>
+                                <div class="col-6 text-right">
+                                    <a href="#" class="text-dark">
+                                        <small>Already has an account. Sign In</small>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
+
                     </div>
 
-
                 </div>
-            </div>
-        </section>
-    </div>
-</main>
-<footer class="footer has-cards">
-    <div class="container bg-transparent">
-        <div class="row row-grid align-items-center my-md bg-transparent">
-            <div class="col-lg-6">
-                <h3 class="text-primary font-weight-light mb-1">Thank you for joining with us!</h3>
-                <!-- <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4> -->
-            </div>
-            <div class="col-lg-6">
-                <div class="copyright text-right">
-                    &copy; 2019 Jobba Inc.
+            </section>
+        </div>
+    </main>
+    <footer class="footer has-cards">
+        <div class="container bg-transparent">
+            <div class="row row-grid align-items-center my-md bg-transparent">
+                <div class="col-lg-6">
+                    <h3 class="text-primary font-weight-light mb-1">Thank you for joining with us!</h3>
+                    <!-- <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4> -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="copyright text-right">
+                        &copy; 2019 Jobba Inc.
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- Core -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/popper/popper.min.js"></script>
-<script src="vendor/bootstrap/bootstrap.min.js"></script>
-<script src="vendor/headroom/headroom.min.js"></script>
-<!-- Optional JS -->
-<script src="vendor/onscreen/onscreen.min.js"></script>
-<script src="vendor/nouislider/js/nouislider.min.js"></script>
-<script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-<!-- Argon JS -->
-<script src="js/argon.js?v=1.0.1"></script>
+    </footer>
+    <!-- Core -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="vendor/headroom/headroom.min.js"></script>
+    <!-- Optional JS -->
+    <script src="vendor/onscreen/onscreen.min.js"></script>
+    <script src="vendor/nouislider/js/nouislider.min.js"></script>
+    <script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <!-- Argon JS -->
+    <script src="js/argon.js?v=1.0.1"></script>
 </body>
 
 </html>
-
