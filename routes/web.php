@@ -72,3 +72,7 @@ Route::get('/edit/{id}','VacancyController@edit'); //edit table
 Route::post('/vacancy_update','VacancyController@update'); //update table
  
 Route::get('/member/{id}','MemberController@get');
+Route::post('/member','MemberController@update');
+Route::post('/member-del/{id}','MemberController@delete');
+
+Route::get('/user-vacancy/{id}','UserApplicationController@view');
